@@ -1,5 +1,5 @@
-var all = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q12011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
+var all = L.mapbox.tileLayer('newscientist26102012.map-ut1k6imv'),
+	Q12011 = L.mapbox.tileLayer('newscientist26102012.map-0o8p3fb1'),
 	Q22011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
 	Q32011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
 	Q42011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
