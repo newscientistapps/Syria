@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Syrian Conflict | New Scientist</title>
+  	<script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
+  	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css' rel='stylesheet' />
+    <link href="css/syria.css" rel="stylesheet" type="text/css" />
+ 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+</head>
+
+<body>
+	
+    <div id="header">
+
+        <a href="http://www.newscientist.com/" target="_blank"><img src="img/NSlogo.png" alt="NS logo"/></a>
+        <p id="back"><a href="index.html" target="_parent">Back to interactive</a></p>
+
+	</div>
+
+    <div id="panel">
+	
+		<h2>Charting Syria's civil war</h2>
+
+		<p>The <a href="http://eventdata.psu.edu/data.dir/GDELT.html" target="_blank">Global Data on Events, Location and Tone</a> dataset contains information on events both good and bad, pulling information from news stories. Natural language processing software works out what one “actor” has done to another, and also adds a location for the action.  For example, if a report contains the line “Syrian military units shelled civilians in Homs” the event might be coded “SYRMIL fought CVL” and include the latitude and longitude for that city.</p>
+
+		<p>To concentrate on Syria’s civil war, <em>New Scientist</em> selected acts of “material conflict” from  within the country’s borders between all domestic actors –  including military, government, rebels, civilians and media. We further narrowed the focus to events with a <a href="http://www.jstor.org/discover/10.2307/174480?uid=2&uid=4&sid=21102193798631" target="_blank">"Goldstein scale"</a> of -9 or less. These are judged to be the most destabilising actions, including fighting, violent repression and destruction of property.</p> 
+
+		<p>Some events were described only as occurring in Syria, and had no more specific location. These are included in the chart, but do not appear on the maps.</p>
+
+    	<h3>Credits</h3> 
+    	
+    	<p>Analysis and graphic by Peter Aldhous.</p>
+
+    	Source: <a href="http://www.kalevleetaru.com/" target="_blank">Kalev Leetaru</a> and <a href="http://polisci.la.psu.edu/people/pas52" target="_blank">Philip Schrodt</a> / GDELT.</p>
+    	
+    	<p><strong>First published:</strong> 13 May 2013.
+			
+	</div>
+		
+	<div id="map">
+		
+	<script>
+
+	var all = L.mapbox.tileLayer('newscientist26102012.map-ut1k6imv');
+
+	var map = L.map('map', {
+    	center: new L.LatLng(35, 36.5),
+    	zoom: 7, 
+    	maxZoom: 9,
+    	minZoom: 5,
+    	layers: [all]
+	});
+	   	
+	</script>
+	
+	</div>
+
+		
+</body>
+</html>

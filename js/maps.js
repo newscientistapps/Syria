@@ -1,13 +1,13 @@
 var all = L.mapbox.tileLayer('newscientist26102012.map-ut1k6imv'),
 	Q12011 = L.mapbox.tileLayer('newscientist26102012.map-0o8p3fb1'),
-	Q22011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q32011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q42011 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q12012 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q22012 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q32012 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q42012 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv'),
-	Q12013 = L.mapbox.tileLayer('newscientist26102012.map-djlmnumv');
+	Q22011 = L.mapbox.tileLayer('newscientist26102012.map-nvv7h3ai'),
+	Q32011 = L.mapbox.tileLayer('newscientist26102012.map-041p4w4h'),
+	Q42011 = L.mapbox.tileLayer('newscientist26102012.map-zvt3n5vx'),
+	Q12012 = L.mapbox.tileLayer('newscientist26102012.map-v1ikt809'),
+	Q22012 = L.mapbox.tileLayer('newscientist26102012.map-gsktvefm'),
+	Q32012 = L.mapbox.tileLayer('newscientist26102012.map-dd0i2zw8'),
+	Q42012 = L.mapbox.tileLayer('newscientist26102012.map-kavzvtye'),
+	Q12013 = L.mapbox.tileLayer('newscientist26102012.map-u83cazo4');
 	
 var map = L.map('map', {
     center: new L.LatLng(35, 36.5),
