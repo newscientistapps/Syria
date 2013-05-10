@@ -39,11 +39,135 @@ $(function () {
                     text: null
                 },
             tickInterval: 24 * 3600 * 1000 * 30.42 * 12,
-            minorTickInterval: 24 * 3600 * 1000 * 30.42 * 3,
-            minorTickWidth: 1,
-            minorTickLength: 5,
-            minorGridLineWidth: 0,
-            },
+            plotBands: [{
+                color: '#f5f5f5',
+                opacity: 0.3,
+                from: Date.UTC(2011, 0, 1),
+                to: Date.UTC(2011, 2, 31),
+                label: {
+                	text: 'Q1',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+                color: '#fff',
+                opacity: 0.3,
+                from: Date.UTC(2011, 3, 1),
+                to: Date.UTC(2011, 5, 30),
+                label: {
+                	text: 'Q2',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+                color: '#f5f5f5',
+                opacity: 0.3,
+                from: Date.UTC(2011, 6, 1),
+                to: Date.UTC(2011, 8, 30),
+                label: {
+                	text: 'Q3',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+                color: '#fff',
+                opacity: 0.3,
+                from: Date.UTC(2011, 9, 1),
+                to: Date.UTC(2011, 11, 31),
+                label: {
+                	text: 'Q4',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+				color: '#f5f5f5',
+                opacity: 0.3,
+                from: Date.UTC(2012, 0, 1),
+                to: Date.UTC(2012, 2, 31),
+                label: {
+                	text: 'Q1',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+                color: '#fff',
+                opacity: 0.3,
+                from: Date.UTC(2012, 3, 1),
+                to: Date.UTC(2012, 5, 30),
+                label: {
+                	text: 'Q2',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                 },{
+                color: '#f5f5f5',
+                opacity: 0.3,
+                from: Date.UTC(2012, 6, 1),
+                to: Date.UTC(2012, 8, 30),
+                label: {
+                	text: 'Q3',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+                color: '#fff',
+                opacity: 0.3,
+                from: Date.UTC(2012, 9, 1),
+                to: Date.UTC(2012, 11, 31),
+                label: {
+                	text: 'Q4',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}
+                },{
+				color: '#f5f5f5',
+                opacity: 0.3,
+                from: Date.UTC(2013, 0, 1),
+                to: Date.UTC(2013, 2, 31),
+                label: {
+                	text: 'Q1',
+                	align: 'center',
+                	verticalAlign: 'top',
+                	style:{
+                		fontSize:'8pt',
+                		color: '#ccc'
+                		}
+                	}                
+                }]
+                },
+
             yAxis: {
                 title: {
                     text: 'Violent events per day',
@@ -84,8 +208,9 @@ $(function () {
                     threshold: null
                 }
             },
-    
-            series: [{
+            
+            
+        series: [{
                 type: 'area',
                 name: 'Violent events',
                 pointInterval: 24 * 3600 * 1000,

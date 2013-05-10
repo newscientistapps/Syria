@@ -32,7 +32,7 @@ body  {
 
 #header #back {
     position: absolute;
-    right: 1%;
+    right: 2%;
 } 
 
 #map {
@@ -50,8 +50,8 @@ body  {
     left: 1%;
     padding: 0px 10px;
     width: 35%;
-    -webkit-border-radius:3px 3px 3px 3px;
-            border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:5px 5px 5px 5px;
+            border-radius:5px 5px 5px 5px;
 }
 
 #timeline {
@@ -61,8 +61,8 @@ body  {
     left: 1%;
     padding: 0px 10px;
     width: 35%;
-    -webkit-border-radius:3px 3px 3px 3px;
-            border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:5px 5px 5px 5px;
+            border-radius:5px 5px 5px 5px;
 }
 
 #container {
@@ -80,3 +80,13 @@ body  {
 	left: 37%;
 }
 
+#legend {
+    background: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    right: 1%;
+    padding: 0px 10px;
+    -webkit-border-radius:5px 5px 5px 5px;
+            border-radius:5px 5px 5px 5px;
+
+}
