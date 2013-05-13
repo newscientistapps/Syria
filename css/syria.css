@@ -82,8 +82,8 @@ body  {
 	z-index: 9999;
 }
 
-.marker-popup {
-	max-width:100px;
+.leaflet-popup {
+	max-width:200px;
 	z-index: 9999;
 }
 
