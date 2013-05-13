@@ -8,6 +8,8 @@ var all = L.mapbox.tileLayer('newscientist26102012.map-zxrdyqpq'),
 	Q32012 = L.mapbox.tileLayer('newscientist26102012.map-dd0i2zw8'),
 	Q42012 = L.mapbox.tileLayer('newscientist26102012.map-kavzvtye'),
 	Q12013 = L.mapbox.tileLayer('newscientist26102012.map-u83cazo4');
+
+var events = L.mapbox.markerLayer ('newscientist26102012.map-zxrdyqpq');
 	
 var map = L.map('map', {
     center: new L.LatLng(35, 36.5),
@@ -30,7 +32,12 @@ var baseMaps = {
 	"Q1 2013": Q12013
 };
 
-var layersControl = new L.Control.Layers(baseMaps, null, {collapsed: false});
+
+var overlayMaps = {
+    "Key events": events
+};
+
+var layersControl = new L.Control.Layers(baseMaps, overlayMaps, {collapsed: false});
 map.addControl(layersControl);
 
 
