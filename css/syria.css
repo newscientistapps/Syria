@@ -83,7 +83,7 @@ body  {
 }
 
 .leaflet-popup {
-	max-width:200px;
+	max-width:180px;
 	z-index: 9999;
 }
 
