@@ -74,10 +74,17 @@ body  {
 .leaflet-top {
 	top: 50px;
 	padding: 0px 10px;
+	z-index: 1;
 }
 
 .leaflet-left {
 	left: 37%;
+	z-index: 1;
+}
+
+.marker-popup {
+	max-width:100px;
+	z-index: 1;
 }
 
 #legend {
